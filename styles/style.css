@@ -482,7 +482,7 @@ address {
 }
 
 .portfolio-list-title {
-    margin: 20px 24px 4px;
+    padding: 20px 24px 4px;
     font-size: 18px;
     font-weight: 700;
     line-height: 36px;
