@@ -1,9 +1,22 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    text-decoration: none
+html {
+    box-sizing: border-box;
 }
 
-header {}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 0 auto;
+}
+
+header {    
+    border-bottom: 1px solid #ECECEC;
+}
 
 footer {
 
@@ -20,10 +33,16 @@ p {
 }
 
 li {
+    display: inline-block;
     list-style-type: none;
 }
 
-ul {}
+ul {
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav {}
 
 h1 {
     font-size: 44px;
@@ -32,6 +51,7 @@ h1 {
     letter-spacing: 0.06em;
     text-align: center;
     color: #FFFFFF;
+    margin: 0;
 }
 
 h2 {
@@ -41,6 +61,7 @@ h2 {
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
+    margin: 0;
 }
 
 h3 {
@@ -50,6 +71,7 @@ h3 {
     letter-spacing: 0.03em;
     text-align: left;
     color: #212121;
+    margin: 0;
 }
 
 a {
@@ -73,6 +95,34 @@ address {
     font-style: normal;
 }
 
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section:not(:first-child) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.bluetext {
+    color: #2196F3;
+    text-align: center;
+
+}
+
+.whitetext {
+    color: #fff;
+    text-align: center;
+}
+
+.blacktext {
+    color: #000;
+    text-align: center;
+}
+
 .footer-map {
     font-size: 14px;
     font-weight: 400;
@@ -82,11 +132,12 @@ address {
     color: #FFFFFF;
 }
 
-.footer-map:hover {
+.footer-map:hover, :focus {
     color: #fff;
 }
 
-.footer-contacts {
+.footer-contacts-link {
+    display: inline-block;
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
@@ -95,50 +146,50 @@ address {
     color: #FFFFFF99;
 }
 
-.footer-contacts:hover {
+.footer-contacts-link:hover, :focus {
     color: #fff;
 }
 
-.webstudio-logo {}
+.footer-webstudio-logo {
+    box-sizing: border-box;
+}
 
-.header-nav-link {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-    letter-spacing: 0.02em;
+.footer-contact-div {
+    display: inline-block;
     text-align: left;
-    color: #212121;
+}
+
+.footer-contacts-list {
+    display: inline-block;
+    padding: 0;
+}
+
+.footer-contacts-item {
+    display: block;
 
 }
 
-.header-nav-ul {}
-
-.header-contacts {}
+.header-webstudio-logo {
+    display: flex;
+    flex-direction: row;
+    vertical-align: top;
+}
 
 .webstudio-link {
+    display: inline-block;
     font-family: Raleway;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    text-align: left;
+    text-align: center;
     color: #000;
+    margin-top: 24px;
 }
 
-.bluetext {
-    color: #2196F3;
-}
 
-.whitetext {
-    color: #fff;
-}
-
-.blacktext {
-    color: #000;
-}
-
-.Button-section {
-    background-color: #2F303A;
+.header-section {
+    margin: 0 auto;
 }
 
 .header-nav {
@@ -150,17 +201,60 @@ address {
     color: #212121;
 }
 
+.header-nav-item {
+    padding-right: 50px;
+}
+
+.header-nav-item:last-child {
+    padding-right: 0;
+}
+
 .header-contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-align: left;
     color: #757575;
+    margin: 32px 0px 32px 331px;
+    padding: 0;
+}
+
+.header-contacts-item:first-child {
+    padding-right: 50px;
 }
 
 .header-contacts-link {
     color: #757575;
+}
+
+
+.header-nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #212121;
+}
+
+.header-nav-ul {
+    display: flex;
+    flex-direction: row;
+    margin: 32px 0px 32px 93px;
+}
+
+
+.Button-section {
+    background-color: #2F303A;
+    text-align: center;
+}
+
+.button-section-title {
+    padding: 200px 0 30px;
 }
 
 .main-page-button {
@@ -173,6 +267,9 @@ address {
     background-color: #2196F3;
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px #00000026;
+    border-radius: 4px;
+    padding: 10px 32px;
+    margin-bottom: 200px; 
 }
 
 .main-page-button:hover {
@@ -190,7 +287,17 @@ address {
 
 .about-us-section {}
 
-.about-us-list {}
+.about-us-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    max-width: 100%;
+}
+
+.about-us-item {
+    display: inline-block;
+    max-width: max-content;
+}
 
 .about-us-title {
     font-size: 14px;
@@ -201,28 +308,54 @@ address {
 }
 
 .about-us-text {
+    display: inline-block;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
     text-align: left;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-right: 30px;
 }
 
-.what-we-do-section {}
+.about-us-text:last-child {
+    margin-right: 0px;
+    padding-right: 0px;
+}
 
-.what-we-do-list {}
+.what-we-do-list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
 
-.what-we-do-item {}
+.what-we-do-item:not(:last-child) {
+    padding-right: 30px;
+}
 
 .our-team-section {
     background-color: #F5F4FA;
 }
 
+.our-team-box {
+    box-shadow: 0px 2px 1px 0px #00000033;
+
+box-shadow: 0px 1px 1px 0px #00000024;
+
+box-shadow: 0px 1px 3px 0px #0000001F;
+
+}
 .our-team-list {
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    padding-top: 50px;
 }
 
-.our-team-item {}
+.our-team-item:not(:last-child) {
+    padding-right: 30px;
+}
 
 .our-team-name {
     font-size: 16px;
@@ -274,6 +407,23 @@ address {
 
 .portfolio-list-item {
     border: 1px solid #EEEEEE;
+}
+
+.portfolio-list-title {
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.portfolio-list-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    text-align: left;
 }
 
 .portfolio-buttons-list {
