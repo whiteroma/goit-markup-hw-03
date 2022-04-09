@@ -44,6 +44,10 @@ ul {
 
 nav {}
 
+img {
+    display: block
+}
+
 h1 {
     font-size: 44px;
     font-weight: 900;
@@ -112,6 +116,19 @@ address {
     padding-bottom: 94px;
 }
 
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-color: #2F303A;
+    text-align: center;
+}
+
+/* .Button-section {
+    padding-top: 200px;
+    background-color: #2F303A;
+    text-align: center;
+} */
+
 .bluetext {
     color: #2196F3;
     text-align: center;
@@ -163,7 +180,7 @@ address {
 .footer-webstudio-logo {
     padding-bottom: 20px;
     box-sizing: border-box;
-
+margin: 0 auto;
 }
 
 .footer-contact-div {
@@ -187,7 +204,7 @@ address {
     vertical-align: top;
 }
 
-.webstudio-link {
+.footer-webstudio-link {
     display: inline-block;
     font-family: Raleway;
     font-size: 26px;
@@ -196,6 +213,18 @@ address {
     letter-spacing: 0.03em;
     text-align: center;
     color: #000;
+}
+
+.header-webstudio-link {
+    display: inline-block;
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: #000;
+    margin: 25px auto;
 }
 
 
@@ -260,12 +289,9 @@ address {
 
 
 .Button-section {
-    background-color: #2F303A;
-    text-align: center;
 }
 
 .button-section-title {
-    padding: 200px 0 30px;
 }
 
 .main-page-button {
@@ -279,8 +305,6 @@ address {
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px #00000026;
     border-radius: 4px;
-    padding: 10px 32px;
-    margin-bottom: 200px;
 }
 
 .main-page-button:hover {
@@ -473,5 +497,7 @@ border-bottom-right-radius: 4px;
     text-align: left;
 }
 
-.portfolio-list-item-link {
+.portfolio-list-text-div {
+    border: 1px solid #ECECEC;
+    border-top-style: none;
 }
